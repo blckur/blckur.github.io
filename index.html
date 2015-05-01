@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Apr 29 2015 04:45:08 GMT+0000 (UTC) -->
+<!-- Last Published: Fri May 01 2015 17:28:07 GMT+0000 (UTC) -->
 <html data-wf-site="552d93e68f4602c87dfc79f2" data-wf-page="552d93e68f4602c87dfc79f4">
 <head>
   <meta charset="utf-8">
@@ -14,7 +14,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ["Montserrat:400,700","Bitter:400,700,400italic","Pacifico:regular","Roboto:100,300,regular"]
+        families: ["Montserrat:400,700","Bitter:400,700,400italic","Pacifico:regular"]
       }
     });
   </script>
@@ -30,14 +30,31 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7736912/708446/css/fonts.css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Whitney SSm A","Whitney SSm B","Arial",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      color: #444;
+    }
+    h1, h2, h3, button, .button, .beta {
+      font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+  </style>
 </head>
 <body>
   <header class="w-section navbar">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4">
-          <div class="app-name">blckur</div>
+          <div class="name">
+            <div class="app-name">blckur</div>
+            <div class="beta">beta</div>
+          </div>
         </div>
         <div class="w-col w-col-8 nav-column"><a class="nav-link" href="https://app.blckur.com/">Login</a><a class="nav-link" href="https://app.blckur.com/#/signup">Sign Up</a>
         </div>
@@ -48,15 +65,21 @@
     <div class="hero-img"></div>
     <div class="w-container">
       <div class="w-row">
-        <div class="w-col w-col-6"><img class="hero-iphone" src="images/phone.png" width="330px" alt="553712fc681eb6de77cd0301_phone.png">
+        <div class="w-col w-col-4"><img class="hero-iphone" src="images/phone.png" width="330px">
         </div>
-        <div class="w-col w-col-6 call-to-action">
-          <h1 class="hero-header">Simple notifications</h1>
+        <div class="w-col w-col-8 call-to-action">
+          <h1 class="hero-header">Simple Notifications</h1>
           <p class="hero-subtitle">Get detailed notifications with filters in one simple interface</p>
           <div class="buttons"><a class="button" href="https://app.blckur.com/">Login</a><a class="button" href="https://app.blckur.com/#/signup">Sign Up</a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="w-section info">
+    <div class="w-container">
+      <h1 class="info-title">Streamline Your Notifcations</h1><img class="screenshot" src="images/desktop.png">
+      <p>Integrate Blckur with your&nbsp;tools or use the api to&nbsp;aggregate all your notifications and received more detailed alerts. Filters can optionally added to&nbsp;be notified about important alerts.</p>
     </div>
   </div>
   <div class="w-section section grey footer">

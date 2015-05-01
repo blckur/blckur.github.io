@@ -1,5 +1,4 @@
 body {
-  font-family: Montserrat, sans-serif;
   color: #333;
   font-size: 12px;
   line-height: 20px;
@@ -50,11 +49,13 @@ h6 {
 }
 p {
   display: block;
-  margin-bottom: 5px;
-  font-family: Bitter, serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-right: 7px;
+  padding-left: 7px;
   color: #a1a1a1;
-  font-size: 15px;
-  line-height: 23px;
+  font-size: 28px;
+  line-height: 32px;
 }
 .button {
   display: inline-block;
@@ -86,6 +87,7 @@ p {
 }
 .section.hero {
   position: relative;
+  padding-top: 134px;
   padding-bottom: 0px;
   background-color: #292929;
   background-image: -webkit-linear-gradient(left, #3076d5, #1026a1);
@@ -139,9 +141,8 @@ p {
   border-bottom: 2px solid transparent;
   -webkit-transition: border 300ms ease;
   transition: border 300ms ease;
-  font-family: Montserrat, sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -149,24 +150,25 @@ p {
   border-bottom-color: #f02e4e;
 }
 .nav-column {
+  font-weight: 400;
   text-align: right;
 }
 .hero-header {
+  position: static;
   margin-top: 130px;
   margin-bottom: 19px;
-  font-family: Montserrat, sans-serif;
   color: white;
-  font-size: 45px;
-  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
+  font-size: 58px;
+  font-weight: 500;
+  text-shadow: none;
 }
 .hero-subtitle {
   margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
   color: rgba(255, 255, 255, 0.83);
   font-size: 29px;
   line-height: 37px;
   font-weight: 300;
-  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
+  text-shadow: none;
 }
 .icon-title {
   margin-top: 22px;
@@ -245,17 +247,23 @@ p {
 .footer-text {
   display: inline;
 }
+.call-to-action {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .center {
   text-align: center;
 }
 .navbar {
-  position: static;
+  position: absolute;
   top: 0px;
   z-index: 2;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #03a9f4;
+  float: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  background-color: transparent;
 }
 .social-widget {
   display: inline-block;
@@ -306,9 +314,35 @@ p {
 .buttons {
   text-align: left;
 }
+.info {
+  padding-top: 82px;
+  background-image: url('../images/pattern2.svg');
+}
+.info-title {
+  color: #2a2a2a;
+  text-align: center;
+}
+.screenshot {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.beta {
+  position: absolute;
+  left: 138px;
+  bottom: -7px;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #e01111;
+  color: white;
+  font-size: 18px;
+}
 @media (max-width: 991px) {
   p {
-    font-size: 14px;
+    font-size: 26px;
     line-height: 21px;
   }
   .button {
@@ -316,28 +350,35 @@ p {
     box-shadow: none;
   }
   .section.hero {
-    padding-top: 34px;
+    padding-top: 132px;
     padding-bottom: 1px;
   }
   .hero-iphone {
     text-shadow: black 0px 0px 0px;
   }
   .hero-header {
-    font-size: 34px;
+    font-size: 42px;
     text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
   }
   .hero-subtitle {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 26px;
     text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
   }
   .buttons {
     text-align: center;
   }
+  .name {
+    position: relative;
+    display: inline-block;
+  }
 }
 @media (max-width: 767px) {
   h2 {
     margin-top: 0px;
+  }
+  p {
+    font-size: 20px;
   }
   .button {
     margin-right: 25px;
@@ -350,9 +391,7 @@ p {
     text-align: center;
   }
   .section.hero {
-    padding-right: 38px;
-    padding-bottom: 52px;
-    padding-left: 38px;
+    padding: 191px 38px 52px;
     text-align: center;
   }
   .hero-iphone {
@@ -408,6 +447,9 @@ p {
   h3 {
     font-size: 18px;
     line-height: 23px;
+  }
+  p {
+    font-size: 20px;
   }
   .button {
     box-shadow: none;
