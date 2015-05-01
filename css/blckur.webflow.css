@@ -62,7 +62,7 @@ p {
   margin-right: 50px;
   padding: 20px 25px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgba(255, 255, 255, 0.12);
   box-shadow: none;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
@@ -319,6 +319,8 @@ p {
   background-image: url('../images/pattern2.svg');
 }
 .info-title {
+  padding-right: 5px;
+  padding-left: 5px;
   color: #2a2a2a;
   text-align: center;
 }
